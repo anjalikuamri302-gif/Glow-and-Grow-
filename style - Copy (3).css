@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fff0f6, #f3e8ff, #e8f8f5);
+    color: #5b4566;
+    transition: 0.3s;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 15px rgba(150, 100, 150, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar h2 {
+    color: #d65a9e;
+    margin: 0;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #765d7c;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #d65a9e;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 70px 20px 30px;
+}
+
+h1 {
+    font-size: 52px;
+    color: #d65a9e;
+    margin: 0 0 10px;
+}
+
+header p {
+    font-size: 20px;
+    color: #765d7c;
+}
+
+.sparkles {
+    font-size: 22px;
+    margin: 10px 0;
+    letter-spacing: 8px;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px auto 40px;
+    padding: 0 20px;
+}
+
+.gallery img {
+    width: 280px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(150, 100, 150, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.04);
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 22px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 30px auto 60px;
+    padding: 0 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.88);
+    width: 220px;
+    padding: 25px;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(150, 100, 150, 0.18);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h2 {
+    font-size: 22px;
+    color: #c75b91;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.card ul {
+    text-align: left;
+    padding-left: 20px;
+    line-height: 2;
+}
+
+/* Buttons */
+button {
+    background: #d65a9e;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #c04d8c;
+    transform: scale(1.05);
+}
+
+/* About */
+.about {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(150, 100, 150, 0.12);
+}
+
+.about h2 {
+    color: #c75b91;
+}
+
+.about p {
+    color: #765d7c;
+    line-height: 1.6;
+}
+
+/* Contact */
+.contact {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 25px;
+}
+
+.contact h2 {
+    color: #c75b91;
+}
+
+.contact input,
+.contact textarea {
+    width: 90%;
+    margin: 8px 0;
+    padding: 12px;
+    border: 1px solid #e5c8df;
+    border-radius: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.contact textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #24202a;
+    color: #f5eaf7;
+}
+
+.dark-mode .navbar,
+.dark-mode .card,
+.dark-mode .about,
+.dark-mode .contact {
+    background: rgba(55, 48, 62, 0.95);
+}
+
+.dark-mode .navbar a,
+.dark-mode header p,
+.dark-mode .about p,
+.dark-mode footer {
+    color: #e6d8e8;
+}
+
+.dark-mode .card h2,
+.dark-mode .about h2,
+.dark-mode .contact h2 {
+    color: #f3a9cf;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 28px;
+    color: #765d7c;
+    font-size: 15px;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .gallery img {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .about,
+    .contact {
+        margin: 30px 20px;
+    }
+}
