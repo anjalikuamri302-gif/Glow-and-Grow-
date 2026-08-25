@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Glow & Grow 🌸 | Self-Care & Good Vibes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <h2>Glow & Grow 🌸</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skincare">Skincare</a></li>
+            <li><a href="#selfcare">Self-Care</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    </nav>
+
+
+    <!-- Hero -->
+    <header id="home">
+        <h1>Glow & Grow 🌸</h1>
+
+        <div class="sparkles">✨ 🌸 ✨ 💕 ✨</div>
+
+        <p>Your little space for self-care, skincare & good vibes 💕</p>
+    </header>
+
+
+    <!-- Image Gallery -->
+    <section class="gallery">
+        <img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=600&q=80"
+            alt="Skincare products">
+
+        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80"
+            alt="Self-care skincare">
+
+        <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=600&q=80"
+            alt="Skincare routine">
+    </section>
+
+
+    <!-- Main Cards -->
+    <main class="cards" id="skincare">
+
+        <!-- Morning Skincare -->
+        <section class="card">
+            <h2>🌞 Morning Skincare</h2>
+
+            <p>Start your day with a simple, fresh skincare routine.</p>
+
+            <ul>
+                <li>🫧 Cleanser</li>
+                <li>💧 Moisturizer</li>
+                <li>☀️ Sunscreen</li>
+            </ul>
+
+            <h3>✨ Glow Goal</h3>
+
+            <p>Take care of your skin and keep your glow going! 🌸</p>
+
+            <button onclick="newTip()">Skincare Tip 💡</button>
+
+            <p id="tip"></p>
+        </section>
+
+
+        <!-- Night Skincare -->
+        <section class="card">
+            <h2>🌙 Night Skincare</h2>
+
+            <p>Wind down and give your skin some relaxing care.</p>
+
+            <ul>
+                <li>🫧 Clean your face</li>
+                <li>💧 Moisturizer</li>
+                <li>🌙 Relax & rest</li>
+            </ul>
+        </section>
+
+
+        <!-- Daily Motivation -->
+        <section class="card">
+            <h2>💕 Daily Motivation</h2>
+
+            <p id="motivation">
+                You are doing better than you think! ✨
+            </p>
+
+            <button onclick="newMotivation()">
+                New Motivation 💕
+            </button>
+        </section>
+
+
+        <!-- Self Care -->
+        <section class="card" id="selfcare">
+            <h2>🌸 Self-Care</h2>
+
+            <p>Small habits that can make your day feel better.</p>
+
+            <ul>
+                <li>💧 Stay hydrated</li>
+                <li>😴 Get enough sleep</li>
+                <li>🧘 Take time to relax</li>
+            </ul>
+        </section>
+
+
+        <!-- Daily Challenge -->
+        <section class="card challenge">
+            <h2>🌸 Daily Challenge</h2>
+
+            <p id="challenge">
+                Click the button for a little challenge! ✨
+            </p>
+
+            <button onclick="newChallenge()">
+                New Challenge 🌷
+            </button>
+        </section>
+
+    </main>
+
+
+    <!-- About -->
+    <section class="about" id="about">
+        <h2>🌷 About Glow & Grow</h2>
+
+        <p>
+            Glow & Grow is a little space to help you take care of yourself,
+            build simple healthy habits, and add a little positivity to your day. 💕
+        </p>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>💌 Contact Us</h2>
+
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+
+            <button type="submit">Send Message 💕</button>
+        </form>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Made with 💕 for better days 🌸</p>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+
